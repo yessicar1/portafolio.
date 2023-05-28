@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html long="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width">
+        <Title>Encriptador</Title>
+        <LInk rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <img src="logo.png" alt="Logo Alura" class="logo">
+                <h1>ALURA CHALLENGES-ENCRIPTADOR DE TEXTO</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="mensaje">
+                <section class="izquierda">                   
+                    <textarea class="ingreso_texto" placeholder="Ingrese el texto aqui"></textarea>                                                      
+                    <div>
+                        <img src="exclamation.png" alt="">
+                        <h2 class="advertencia">Solo letras minusculas y sin acentos</h2>
+
+                    </div>                                              
+                    
+                    <div class="botones">
+                         <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                         <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>                                
+                    
+                </section>
+
+                <section>
+                    <div class="derecha">
+                        <img class="muñeco" src="muñeco.png" alt="">
+                        <textarea class="mensaje_final">Ningún mensaje fue encontrado</textarea>
+                        <p class="derecha_info">Ingresa el texto que desees Encriptar o Desencriptar</p>
+                        
+                    </div>
+                    <div>
+                        <button id="btn-copiar" onclick="copy()">Copiar</button>
+                    </div>
+                    <div class="contenedor-resultado">
+                        <p class="texto-resultado"></p>
+                    </div>
+
+                </section>  
+            </section>                                                                                                    
+        </main>                      
+    
+        <Footer>
+            <img src="logo-alura.svg" alt="Logo Alura" class="logo-footer">
+            <p class="Copyright">&copy Coperyght Yessica Reyes - 2023</p>
+        </Footer> 
+        <script src="script.js"></script>
+    </body> 
+</html>
+
